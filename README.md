@@ -48,7 +48,7 @@ _doudou.css_ 提供了一系列全局级别的样式定义。只需引用这个 
 ### NPM
 
 ```
-npm i github:h2y/doudou.css#master --save
+npm i github:h2y/doudou.css#1.x --save
 ```
 
 ## * 效果展示
