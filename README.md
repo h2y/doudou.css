@@ -8,7 +8,7 @@ _doudou.css_ 提供了一系列全局级别的样式定义。只需引用这个 
 
 和 [_Bootstrap_](http://getbootstrap.com/) 等传统 CSS 框架最大的不同之处在于，_doudou.css_ 使用标签选择器定义样式。也就是说，覆盖了浏览器对标签默认的表现方式。
 
-> 曾经在开发 Java Swing 程序时，用过一款界面美化组件 [BeautyEye](https://github.com/JackJiang2011/beautyeye)，导入至工程后，只需在入口处添加数条代码就能让原本丑陋的默认界面变得美观。_doudou.css_ 和该项目的定位相似，当然，在这里你除了导入 CSS 文件外并不需要再添加任何代码。
+> 曾经在开发 Java Swing 程序时，用过一款界面美化组件 [_BeautyEye_](https://github.com/JackJiang2011/beautyeye)，导入至工程后，只需在入口处添加数条代码就能让原本丑陋的默认界面变得美观。_doudou.css_ 和该项目的定位相似，当然，在这里你除了导入 CSS 文件外并不需要再添加任何代码。
 
 ### 功能和定位
 
@@ -34,16 +34,16 @@ _doudou.css_ 提供了一系列全局级别的样式定义。只需引用这个 
 将下面的代码添加在 HTML 页面的 `<head>` 标签中，即可引用最新版本的 _doudou.css_：
 
 ```
-<link rel="stylesheet" href="https://raw.githubusercontent.com/h2y/doudou.css/master/dist/doudou.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/h2y/doudou.css/1.x/dist/doudou.min.css">
 ```
 
 ### 下载源文件
 
-请使用上面代码中的链接下载 CSS 文件，然后在本地引用，通常会获得更快的加载速度。
+请使用上面代码中的链接下载 CSS 文件，然后在本地引用，更稳定，并且通常会获得更快的加载速度。
 
 也可以点击下面的链接下载项目的所有文件，包括源代码：
 
-<https://github.com/h2y/doudou.css/archive/master.zip>
+<https://github.com/h2y/doudou.css/archive/1.x.zip>
 
 ### NPM
 
