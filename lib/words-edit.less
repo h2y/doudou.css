@@ -1,0 +1,78 @@
+//vars
+@default-color: hsl(200, 4%, 17%);
+
+
+
+small {
+    font-size: 0.8em;
+    color    : lighten(@default-color, 40%);
+}
+
+
+a {
+    transition: color 0.5s;
+
+    &:hover {
+        color: hsl(48, 99%, 28%);
+    }
+}
+
+
+code, pre {
+    padding         : 1em;
+    overflow        : auto;
+    font-size       : 0.85em;
+    line-height     : 1.45;
+    background-color: hsl(0, 0%, 97%);
+    border-radius   : .5em;
+
+    var {
+        font-style: normal;
+        color     : hsl(227, 60%, 65%);
+    }
+
+    samp {
+        color: hsl(127, 60%, 65%);
+    }
+}
+
+
+kbd {
+    background-color: hsl(195, 22%, 96%);
+    border-radius   : 3px;
+    border          : 1px solid hsl(0, 0%, 71%);
+    box-shadow      : 0 1px 1px rgba(0,0,0,.2), 0 2px 0 0 rgba(255,255,255,.7) inset;
+    display         : inline-block;
+    font-family     : Consolas, "Liberation Mono", Courier, monospace;
+    font-size       : 0.85em;
+    font-weight     : bold;
+    padding         : 2px 4px;
+}
+
+
+abbr {
+    &:hover {
+        color          : lighten(@default-color, 40%);
+        text-decoration: none;
+    }
+}
+
+
+ins {
+    text-decoration: none;
+    font-weight    : bold;
+}
+
+
+del {
+    color          : transparent;
+    text-shadow    : 0 0 0.3em #888;
+    text-decoration: none;
+    transition     : all 0.3s;
+
+    &:hover {
+        text-decoration: line-through;
+        text-shadow    : none;
+        color          : hsl(0, 15%, 37%);
+    }
+}

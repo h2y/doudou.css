@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test page for doudou.css</title>
+
+    <link rel="stylesheet" href="dist/doudou.css">
+    <style>
+        body {
+            padding:  1rem 2rem 10rem;
+        }
+        #control {
+            position: fixed;
+            right:    3rem;
+            top:      2rem;
+        }
+        * {
+            transition: all .1s;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="control">
+        <button type="button" id="change-style" onclick="changeStyle()">restore default style</button>
+    </div>
+
+    <h1>doudou.css Test Page</h1>
+        <p>这个页面提供样式预览。项目地址 <a href="https://github.com/h2y/doudou.css">github:h2y/doudou.css</a>。</p>
+        <p>标签遵循 MDN 提供的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/HTML5_element_list">HTML5 标签列表</a>。</p>
+    <hr>
+
+    <h2>章节</h2>
+        <h3>h3 前两个已经出现在上面了</h3>
+        <h4>h4 恩明显变小了</h4>
+        <h5>h5 第五个</h5>
+        <h6>h6 这个和普通段落一样大小</h6>
+        <p>p 大小样式对照</p>
+    <hr>
+
+    <h2>组织内容</h2>
+        <blockquote>
+            <p>p 这个页面提供样式预览。这个页面提供样式预览。</p>
+            <hr>
+            <ul>
+                <li>ul item</li>
+                <li>ul item</li>
+                <li>ul item</li>
+            </ul>
+        </blockquote>
+        <p>p 我没有为 dt dl dd 标签写样式。</p>
+        <ol>
+            <li>ol item</li>
+            <li>ol item</li>
+            <li>ol item</li>
+            <li>ol item</li>
+        </ol>
+    <hr>
+
+    <h2>文字形式</h2>
+        <p><a href="https://hzy.pw">a 这是一个神秘链接</a></p>
+        <p><small>我是不起眼的小标签。</small>而我是正常大小。</p>
+        <p>文字当中 <i>斜体使用 i 标签</i> 一定要记住。</p>
+        <p>什么？你问 <b>b 有多粗？</b></p>
+        <p><strong>strong 特别说明</strong></p>
+        <p>我可以 <u>用 u 表示下划线</u> 哦！</p>
+        <p><em>em HTML 标签相当的多，我只打算重写 <em>em^2 其中一部分标签</em> 的样式。</em></p>
+
+        <pre>
+//code & pre
+let <var>hello</var> = 'world';
+console.log(<samp>`hello ${hello}!`</samp>);</pre>
+
+        <p>sup/sub 这是<sup>上标的<sup>上标</sup></sup>，以及<sub>下标的<sub>下标</sub></sub>。额，好丑~</p>
+        <p><abbr title="something here...">我一直觉得 abbr 好用。</abbr></p>
+        <p>kbd 标签表示按键：<kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+    <hr>
+
+    <h2>编辑</h2>
+        <p>ins 表示 <ins>插入的内容</ins> 记住了吗？</p>
+        <p>del 表示 <del>被删除的内容</del> 哈哈~</p>
+    <hr>
+
+    <h2>嵌入内容</h2>
+        <p>img</p>
+        <img src="https://q1.qlogo.cn/g?b=qq&nk=243806061&s=160&t=1409739994" alt="img">
+        <p>iframe</p>
+        <iframe src="http://ip.cn" width="800" height="400"></iframe>
+    <hr>
+
+    <h2>表格</h2>
+        <table>
+          <caption>caption here</caption>
+          <thead>
+            <tr>
+              <th>Header content 1</th>
+              <th>Header content 2</th>
+              <th>Header content 3</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td>Footer content 1</td>
+              <td>Footer content 2</td>
+              <td>Footer content 3</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Body content 1</td>
+              <td>Body content 2</td>
+              <td>Body content 3</td>
+            </tr>
+            <tr>
+              <td>Body content 1</td>
+              <td>Body content 2</td>
+              <td>Body content 3</td>
+            </tr>
+            <tr>
+              <td>Body content 1</td>
+              <td>Body content 2</td>
+              <td>Body content 3</td>
+            </tr>
+          </tbody>
+        </table>
+    <hr>
+
+    <h2>表单</h2>
+        <h3>buttons</h3>
+            <p><button>button</button></p>
+            <p><button disabled>button disabled</button></p>
+            <p><button type="submit">submit button</button></p>
+
+        <h3>使用 fieldset, legend, and label 的表单</h3>
+        <form action="" method="post">
+          <fieldset>
+            <p>in fieldset</p>
+            <legend>legend</legend>
+            <input type="radio" name="radio" id="radio"> <label for="radio">label 标签</label>
+          </fieldset>
+          <p>out of fieldset</p>
+        </form>
+
+        <h3>input 标签们</h3>
+        <table>
+          <tr>
+            <th>type</th>
+            <th>实例</th>
+          </tr>
+          <tr>
+            <td>button</td>
+            <td><input type="button" value="content"></td>
+          </tr>
+          <tr>
+            <td>submit</td>
+            <td><input type="submit" value="submit"></td>
+          </tr>
+          <tr>
+            <td>checkbox</td>
+            <td>
+                <p><input type="checkbox" id="checkbox0">
+                    <label for="checkbox0">checkbox</label>
+                </p>
+                <p><input type="checkbox" id="checkbox1" checked>
+                    <label for="checkbox1">checkbox checked</label>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td>radio</td>
+            <td>
+                <p><input type="radio" name="radio" id="radio0" checked>
+                    <label for="radio0">radio checked</label>
+                </p>
+                <p><input type="radio" name="radio" id="radio1">
+                    <label for="radio1">radio</label>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td><input type="time"></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td><input type="date"></td>
+          </tr>
+          <tr>
+            <td>file</td>
+            <td><input type="file" ></td>
+          </tr>
+          <tr>
+            <td>password</td>
+            <td><input type="password" value="content"></td>
+          </tr>
+          <tr>
+            <td>range</td>
+            <td><input type="range"></td>
+          </tr>
+          <tr>
+            <td>text</td>
+            <td><input type="text" placeholder="placeholder"></td>
+          </tr>
+          <tr>
+            <td>textarea</td>
+            <td><textarea name="textarea" rows="3" cols="30">textarea here</textarea></td>
+          </tr>
+          <tr>
+            <td>datetime</td>
+            <td><input type="datetime"></td>
+          </tr>
+          <tr>
+            <td>datetime-local</td>
+            <td><input type="datetime-local"></td>
+          </tr>
+          <tr>
+            <td>email</td>
+            <td><input type="email"></td>
+          </tr>
+          <tr>
+            <td>month</td>
+            <td><input type="month"></td>
+          </tr>
+          <tr>
+            <td>number</td>
+            <td><input type="number" value="1" pattern="^-?[0-9]+$"></td>
+          </tr>
+          <tr>
+            <td>reset</td>
+            <td><input type="reset"></td>
+          </tr>
+          <tr>
+            <td>tel</td>
+            <td><input type="tel" value="not allow value" pattern="^[\(\)0-9\-]{5,15}$"></td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td><input type="time"></td>
+          </tr>
+          <tr>
+            <td>week</td>
+            <td><input type="week"></td>
+          </tr>
+          <tr>
+            <td>url</td>
+            <td><input type="url" value="https://hzy.pw"></td>
+          </tr>
+        </table>
+
+        <h3>select</h3>
+        <select name="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>select & option</option>
+            <option value="value3">Value 3</option>
+        </select>
+
+
+    <script>
+        var usedDoudou = true,
+            styleNode = document.styleSheets[0],
+            buttonNode = document.querySelector('#change-style');
+
+        function changeStyle() {
+            styleNode.disabled = !styleNode.disabled;
+            usedDoudou = !usedDoudou;
+            buttonNode.innerHTML = usedDoudou? 'restore default style' : 'try doudou.css';
+        }
+    </script>
+
+</body>
+</html>
