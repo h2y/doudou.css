@@ -23,7 +23,8 @@ _doudou.css_ 提供了一系列全局级别的样式定义。只需引用这个 
 ### 准则
 
 1. 编写符合大众审美的样式。
-2. 简约风格，能适用于所有类型的网站，便于二次开发。
+2. 简约风格，能适用于所有类型的网站，作为开发最底层样式的存在。
+3. 用户会在导入 _doudou.css_ 后找到还能继续美化的地方，但找不到由于美化过度而需要移除的地方。
 
 ## * 使用方法
 
@@ -65,7 +66,7 @@ npm i github:h2y/doudou.css#1.x --save
 
 _doudou.css_ 重写的标签仅为 HTML 规范内的标签，遵循 MDN 提供的 [HTML5 标签列表](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/HTML5_element_list)。
 
-本项目采用 [glup](http://gulpjs.com/) 构建，[Less](http://lesscss.org/) 来编写样式。`/lib` 为源代码目录，`/dist` 为输出目录。
+本项目采用 [gulp](http://gulpjs.com/) 构建，[Less](http://lesscss.org/) 来编写样式。`/lib` 为源代码目录，`/dist` 为输出目录。
 
 你可能需要以下的命令进行开发：
 
